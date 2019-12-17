@@ -1,0 +1,21 @@
+me=80
+ded=3
+ip=20
+mini=6
+i=0
+s=0
+while ip>=mini:
+   
+    if me>=ip:
+        i=i+1
+        s=s+ip
+        ip=ip-ded
+        print('total ammount:',s)
+    else:
+        break
+    
+ip=mini
+print('minimum reached :',ip)
+me=me-s
+i=i+me//mini
+print(i)
